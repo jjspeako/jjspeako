@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadein {
+    from { opacity: 0.4; }
+    to   { opacity: 1; }
+}
+
+
+.mainNav{
+    display: block;
+    width: 100%;
+    background: white;
+}
+.mainNav ul{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+.mainNav ul a,.mainNav ul a:visited{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    padding: 1em 0em;
+    font-family: 'Cute Font', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24;
+    color: black;
+}
+.mainNav ul a:hover {
+    background: rgba(172, 255, 255,0.4);
+    text-decoration: underline;
+}
+.mainNav ul a:first-child:hover
+{
+    background: white;
+}
+
+
+body{background: RGB(230, 249, 249);}
+
+.bodyGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.newsAnnouncement{
+    background: white;
+    grid-column:2/3;
+    grid-row: 2/5;
+    width: calc((100vw * 90) / 100);
+    height: calc((100vh * 35) / 100);
+}
+body .newsSlide{display: none;animation:fadein 3s; }
+.myGuides{
+    background: black;
+    grid-column: 2/3 ;
+    grid-row:  6/10;
+    width: calc((100vw * 90) / 100);
+    height: calc((100vh * 35) / 100);
+}
+
+footer{
+    text-align: center;
+    background:black;
+    color: bisque
+}
