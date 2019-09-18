@@ -55,12 +55,15 @@ body{background: RGB(230, 249, 249);}
 }
 body .newsSlide{display: none;animation:fadein 3s; }
 .myGuides{
-    background: black;
+    margin: auto;
+    text-align: center;
+    font-family: 'Cute Font', cursive;
     grid-column: 2/3 ;
     grid-row:  6/10;
     width: calc((100vw * 90) / 100);
     height: calc((100vh * 35) / 100);
 }
+.myGuides ul li{list-style: none;}
 
 footer{
     text-align: center;
