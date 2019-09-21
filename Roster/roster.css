@@ -36,7 +36,7 @@
     background: white;
 }
 
-body{background: RGB(230, 249, 249);}
+body{background: RGB(31, 31, 31);color:whitesmoke;}
 
 .rosterSelection{
     display: flex;
