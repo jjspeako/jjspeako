@@ -46,10 +46,17 @@ if(localStorage.getItem("isItRunning") == "true")
     console.log("running");
     switch(localStorage.getItem("rosterIndex"))
     {
-        case "1": myRosterDbIndex = Peter;break;
-        case "2": myRosterDbIndex = Swifferman;break;
-        case "3": myRosterDbIndex = Glazer;break;
-        case "4": myRosterDbIndex = Elgrandprofeta;break;
+        case "1": 
+            myRosterDbIndex = Peter;
+            break;
+        case "2": 
+            myRosterDbIndex = Swifferman;
+            break;
+        case "3": 
+            myRosterDbIndex = Glazer;
+            break;
+        case "4": 
+            myRosterDbIndex = Elgrandprofeta;
     }
     loadRoster()
     rosterLoad = false;
