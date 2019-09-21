@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainNav{
+    display: block;
+    width: 100%;
+    background: white;
+}
+.mainNav ul{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+.mainNav ul a,.mainNav ul a:visited{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    padding: 1em 0em;
+    font-family: 'Cute Font', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24;
+    color: black;
+}
+.mainNav ul a:hover {
+    background: rgba(172, 255, 255,0.4);
+    text-decoration: underline;
+}
+.mainNav ul a:first-child:hover
+{
+    background: white;
+}
+
+body{background: RGB(230, 249, 249);}
+
+.bodyGrid{
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas: "desc profile";
+}
+
+/* to load player image --- will be loaded from database */
+#playerimage{background-image: none;padding: 40% 40%;background-repeat: no-repeat;background-size: cover;margin-left: 5px;margin-right: 5px;}
+
+.profile{
+    grid-area: profile;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border:black 1px solid;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.profile *{
+    padding-bottom: 2em;
+}
+#description{
+    font-size: 20;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5em;
+    padding-top:2em;
+    padding-left: 10px;padding-right:10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.description{grid-area: desc;}
+
+footer{
+    text-align: center;
+    background:black;
+    color: bisque
+}

@@ -6,8 +6,6 @@
     from { opacity: 0.4; }
     to   { opacity: 1; }
 }
-
-
 .mainNav{
     display: block;
     width: 100%;
@@ -38,33 +36,23 @@
     background: white;
 }
 
-
 body{background: RGB(230, 249, 249);}
 
-.bodyGrid{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.rosterSelection{
+    display: flex;
+    flex-direction: column;
 }
-.newsAnnouncement{
-    background: white;
-    grid-column:2/6;
-    grid-row: 2/5;
-    width: 100%;
-    height: calc((100vh * 35) / 100);
+#petercuck img{animation:fadein 3s;}
+.rosterFlex{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
 }
-body .newsSlide{display: none;animation:fadein 3s; }
-.myGuides{
-    margin: auto;
-    text-align: center;
-    font-family: 'Cute Font', cursive;
-    grid-column: 2/3 ;
-    grid-row:  6/10;
-    width: calc((100vw * 90) / 100);
-    height: calc((100vh * 35) / 100);
-    padding-left: 4.5em;
+.rosterFlex *{
+    flex:1;
+    animation: fadein 1.5s;
 }
-.myGuides ul li{list-style: none;}
+
 
 footer{
     text-align: center;

@@ -3,8 +3,6 @@ rollSlides();
 
 function slideVerif(slidesArray)
 {
-    console.log(slideIndex);
-    console.log(slidesArray.length);
     if(slideIndex >= slidesArray.length )
     {
         slideIndex = 0;
